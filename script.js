@@ -45,6 +45,7 @@
 	
 	$(".contact-text").on('click', function () {
 		$("body").addClass("contact-on");
+		
 	});
 	$(".contact-close").on('click', function () {
 		$("body").removeClass("contact-on");
@@ -55,9 +56,14 @@
 	
 	$(".travel").on('click', function () {
 		$("body").addClass("travel-on");
+		$(".nature-section").hide();
+		$(".wildlife-section").hide();
+
 	});
 	$(".travel-close").on('click', function () {
 		$("body").removeClass("travel-on");
+		$(".nature-section").show();
+		$(".wildlife-section").show();
 	});
 
 	
@@ -65,9 +71,13 @@
 	
 	$(".wildlife").on('click', function () {
 		$("body").addClass("wildlife-on");
+		$(".nature-section").hide();
+		$(".travel-section").hide();
 	});
 	$(".wildlife-close").on('click', function () {
 		$("body").removeClass("wildlife-on");
+		$(".nature-section").show();
+		$(".travel-section").show();
 	});
 
 	
@@ -75,9 +85,14 @@
 	
 	$(".nature").on('click', function () {
 		$("body").addClass("nature-on");
+		$(".wildlife-section").hide();
+		$(".travel-section").hide();
+		
 	});
 	$(".nature-close").on('click', function () {
 		$("body").removeClass("nature-on");
+		$(".wildlife-section").show();
+		$(".travel-section").show();
 	});
 
 	
