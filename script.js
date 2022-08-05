@@ -30,14 +30,18 @@
         t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
     }
 
-	
+	//This line is to hide the contact section in the beginning as it was causing issues with the responsiveness
+	$(".contact-section").hide();
+
 	//About page
 	
 	$(".about-text").on('click', function () {
 		$("body").addClass("about-on");
+		$(".contact-section").hide();
 	});
 	$(".about-close").on('click', function () {
 		$("body").removeClass("about-on");
+		$(".contact-section").show();
 	});
 
 	
@@ -45,10 +49,15 @@
 	
 	$(".contact-text").on('click', function () {
 		$("body").addClass("contact-on");
-		
+		$(".nature-section").hide();
+		$(".wildlife-section").hide();
+		$(".travel-section").hide();
 	});
 	$(".contact-close").on('click', function () {
 		$("body").removeClass("contact-on");
+		$(".nature-section").show();
+		$(".wildlife-section").show();
+		$(".travel-section").show();
 	});
 
 	
@@ -58,12 +67,14 @@
 		$("body").addClass("travel-on");
 		$(".nature-section").hide();
 		$(".wildlife-section").hide();
+		$(".contact-section").hide();
 
 	});
 	$(".travel-close").on('click', function () {
 		$("body").removeClass("travel-on");
 		$(".nature-section").show();
 		$(".wildlife-section").show();
+		$(".contact-section").show();
 	});
 
 	
@@ -73,11 +84,13 @@
 		$("body").addClass("wildlife-on");
 		$(".nature-section").hide();
 		$(".travel-section").hide();
+		$(".contact-section").hide();
 	});
 	$(".wildlife-close").on('click', function () {
 		$("body").removeClass("wildlife-on");
 		$(".nature-section").show();
 		$(".travel-section").show();
+		$(".contact-section").show();
 	});
 
 	
@@ -87,12 +100,13 @@
 		$("body").addClass("nature-on");
 		$(".wildlife-section").hide();
 		$(".travel-section").hide();
-		
+		$(".contact-section").hide();
 	});
 	$(".nature-close").on('click', function () {
 		$("body").removeClass("nature-on");
 		$(".wildlife-section").show();
 		$(".travel-section").show();
+		$(".contact-section").show();
 	});
 
 	
