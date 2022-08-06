@@ -37,27 +37,27 @@
 	
 	$(".about-text").on('click', function () {
 		$("body").addClass("about-on");
-		$(".contact-section").hide();
 	});
 	$(".about-close").on('click', function () {
 		$("body").removeClass("about-on");
-		$(".contact-section").show();
 	});
 
 	
 	//Contact page
 	
 	$(".contact-text").on('click', function () {
+		$(".contact-section").show();
 		$("body").addClass("contact-on");
-		$(".nature-section").hide();
-		$(".wildlife-section").hide();
 		$(".travel-section").hide();
+		$(".wildlife-section").hide();
+		$(".nature-section").hide();
 	});
 	$(".contact-close").on('click', function () {
 		$("body").removeClass("contact-on");
-		$(".nature-section").show();
-		$(".wildlife-section").show();
 		$(".travel-section").show();
+		$(".wildlife-section").show();
+		$(".nature-section").show();
+		$(".contact-section").delay(400).hide(0);
 	});
 
 	
@@ -65,16 +65,11 @@
 	
 	$(".travel").on('click', function () {
 		$("body").addClass("travel-on");
-		$(".nature-section").hide();
-		$(".wildlife-section").hide();
-		$(".contact-section").hide();
 
 	});
 	$(".travel-close").on('click', function () {
 		$("body").removeClass("travel-on");
-		$(".nature-section").show();
-		$(".wildlife-section").show();
-		$(".contact-section").show();
+		
 	});
 
 	
@@ -82,15 +77,9 @@
 	
 	$(".wildlife").on('click', function () {
 		$("body").addClass("wildlife-on");
-		$(".nature-section").hide();
-		$(".travel-section").hide();
-		$(".contact-section").hide();
 	});
 	$(".wildlife-close").on('click', function () {
 		$("body").removeClass("wildlife-on");
-		$(".nature-section").show();
-		$(".travel-section").show();
-		$(".contact-section").show();
 	});
 
 	
@@ -98,15 +87,9 @@
 	
 	$(".nature").on('click', function () {
 		$("body").addClass("nature-on");
-		$(".wildlife-section").hide();
-		$(".travel-section").hide();
-		$(".contact-section").hide();
 	});
 	$(".nature-close").on('click', function () {
 		$("body").removeClass("nature-on");
-		$(".wildlife-section").show();
-		$(".travel-section").show();
-		$(".contact-section").show();
 	});
 
 	
