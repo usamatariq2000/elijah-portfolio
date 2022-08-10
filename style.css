@@ -1,10 +1,4 @@
-/* Please ❤ this if you like it! */
 
-
-/* ======================================== * 
-		        BEST VIEWED FULLSCREEN
-   https://codepen.io/ig_design/full/JxbVRq
- * ======================================== */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
@@ -126,7 +120,10 @@ a:hover {
 	}
 }
 .hero-section p{
-	font-size: 15px;
+
+	/*This is where you change the size of the font for the bottom tags*/
+
+	font-size: 20px;
 	line-height: 20px;
 	font-weight: 500;
 	color: #fff;
@@ -200,6 +197,11 @@ body.nature-on .hero-section {
 	z-index: 2;
 	-webkit-writing-mode: vertical-lr;
 	writing-mode: vertical-lr;
+
+	/*This is where you change the oreintation of the about text*/
+	text-orientation: upright;
+	
+	
 	transform: translateY(-50%);
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
@@ -301,10 +303,16 @@ body.about-on .about-section {
 	z-index: 2;
 	-webkit-writing-mode: vertical-lr;
 	writing-mode: vertical-lr;
-	transform: translateY(-50%) rotate(180deg);
+
+	/*This is where you change the orientation of the side text*/
+	text-orientation: upright;
+	
+	/*This is where you change the rotation of the contact text*/
+	transform: translateY(-50%) rotate(360deg);
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
 }
+
 .contact-text:before {
 	position: absolute;
 	content: '';
@@ -317,6 +325,11 @@ body.about-on .about-section {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 30px 30px;
+
+	/*This is where i changed the direction of the arrow in front of the contact and its position*/
+	transform: translateX(140%) rotate(180deg);
+	
+	
 	background-image: url('http://www.ivang-design.com/svg-load/portfolio/left.svg');
 	opacity: 0.2;
 	-webkit-transition: all 200ms linear;
